@@ -3,10 +3,15 @@
 * handles the rendering of the email layout.
 *@
 @(menus: Seq[String])
+<section id="top">
+    <div class="wrapper">
+        <h1>Email Prototype</h1>
+    </div>
+</section>
 <table>
     <tbody>
     @for(menu <- menus) {
-    <tr><td>@menu</td></tr>
+    <tr><td><a href="#">@menu</a></td></tr>
     }
     </tbody>
 </table>
